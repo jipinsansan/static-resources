@@ -1,0 +1,33 @@
+{
+  "name": "static-resources",
+  "version": "1.0.0",
+  "description": "Run static file server static-resources",
+  "bin": {
+    "static-resources": "./bin/static-resources"
+  },
+  "keywords": [
+    "Static",
+    "file",
+    "server",
+    "Assets"
+  ],
+  "author": "sansan",
+  "license": "MIT",
+  "dependencies": {
+    "connect": "^3.6.6",
+    "connect-history-api-fallback": "^1.2.0",
+    "debug": "^2.2.0",
+    "minimist": "^1.2.0",
+    "serve-index": "^1.9.1",
+    "serve-static": "^1.13.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jipinsansan/static-resources.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jipinsansan/static-resources/issues"
+  },
+  "homepage": "https://github.com/jipinsansan/static-resources",
+  "files": ["bin", "keys"]
+}

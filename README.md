@@ -1,37 +1,53 @@
-# 静态资源
+static-resources 随启随用的静态文件服务器
+==============================
 
-#### 项目介绍
-静态资源服务器
+Running static file server static-resources. 静态文件服务器。
 
-#### 软件架构
-软件架构说明
+## Installation
 
+Install it as a command line tool via `npm -g`.
 
-#### 安装教程
+```sh
+npm install static-resources -g
+```
 
-1. xxxx
-2. xxxx
-3. xxxx
+## Execution
 
-#### 使用说明
+```sh
+$ static-resources
+// or with port
+$ static-resources -p 8000
+// or start it but silent(don't open browser)
+$ static-resources -s
+// or with hostname
+$ static-resources -h localhost -p 8888
+// or with folder
+$ static-resources -d ~/git/static-resources
+// or enable html5 history
+$ static-resources -f /index.html
+```
 
-1. xxxx
-2. xxxx
-3. xxxx
+## Help
 
-#### 参与贡献
+```sh
+$ static-resources --help
+Usage:
+  static-resources --help // print help information
+  static-resources // 8000 as default port, current folder as root
+  static-resources 8888 // 8888 as port
+  static-resources -p 8989 // 8989 as port
+  static-resources -s // don't open browser
+  static-resources -h localhost // localhost as hostname
+  static-resources -d /home // /home as root
+  static-resources -f /index.html  // Enable html5 history,the index is /index.html
+```
 
-1. Fork 本项目
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
+## Visit
 
+```
+http://localhost:8000
+```
+执行命令后，默认浏览器将为您自动打开主页。
 
-#### 码云特技
-
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+## License
+The MIT license.
